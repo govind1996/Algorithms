@@ -12,13 +12,11 @@ lli gcd(lli a,lli b) { return b?gcd(b,a%b):a;}
 struct node
 {
     lli data;
-    node *next;
 };
 node *createNode(lli val)
 {
     node *newNode=new node;
     newNode->data=val;
-    newNode->next=NULL;
     return newNode;
 }
 void addEdge(vector<node*>g[],lli s,lli d)
